@@ -1,0 +1,23 @@
+<svg width="1205" height="893" viewBox="0 0 1205 893" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M810.5 360.5C1066.5 393 1139 22 1209.5 0V892.5H0.5C209.333 825.333 610.324 335.087 810.5 360.5Z" fill="url(#paint0_angular)"/>
+<defs>
+<radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.5 912.5) rotate(-22.0292) scale(537.221 972.296)">
+<stop offset="0.124014" stop-color="#3F6571" stop-opacity="0"/>
+<stop offset="0.171058" stop-color="#3A788C" stop-opacity="0.241486"/>
+<stop offset="0.718599" stop-color="#29B4E0"/>
+<stop offset="0.856534" stop-color="#29B4E0"/>
+</radialGradient>
+</defs>
+</svg>
+<div class="nav_one" id="nav_one">
+                <a href="#">Home</a>
+            </div>
+            <div class="nav_one" id="nav_two">
+                <a href="">Registration</a>
+            </div>
+            <div class="nav_one" id="nav_three">
+                <a href="">Projects</a>
+            </div>
+            <div class="nav_one" id="nav_four">
+                <a href="">Team</a>
+            </div>

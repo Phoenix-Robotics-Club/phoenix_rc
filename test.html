@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Phoenix Robotics Club</title>
+    <link rel="icon" type='icon' href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_GIRit0DIgFJ0kKIWiY8U6");
+      })();
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+    <div class="header" id='header' style="position: fixed;width:100%;z-index: 100;">
+        <div class="logo"style=' display: flex;justify-content: space-between;align-items:center;'>
+            <a href="/" class="logo_text"><img src="images/logo.png" alt="" style="width: 80px;height: 80px;"><div style="text-align: center;padding-right: 10px;"></div></a>
+            <a href="/" id='logo-text' class="logo_text">Phoenix Robotics Club<div style="text-align: center;">RVITM</div></a>
+        </div>
+        
+        <nav>
+
+            <ul class="nav-links">
+                <li><a class="nav_li" id='home' href="">Home</a></li>
+                <li><a class="nav_li" id='events' href="registration.html">Registration</a></li>
+                <li><a class="nav_li" id='team' href="{% url 'events' %}">Team</a></li>
+                <li><a class="nav_li" id='about us' href="{% url 'team' %}">About Us</a></li>
+                
+            </ul>
+            
+        </nav>
+        <button id='menu' onclick='hamburger()'><img src="images/menu.png" alt=""></button>
+        
+
+    </div>
+    <ul class="hamburger_menu">
+      <li><a class="nav_li" id='hamburger_home' href="">Home</a></li>
+      <li><a class="nav_li" id='hamburger_events' href="registration.html">Registration</a></li>
+      <li><a class="nav_li" id='hamburger_team' href="#">Team</a></li>
+      <li><a class="nav_li" id='hamburger_about us' href="#">About Us</a></li>
+    </ul>
+    <div class="slidebar">
+  
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style='background-color:black'></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" style='background-color:black'></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" style='background-color:black'></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3" style='background-color:black'></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="introduction slide1-box">
+                        <div class='intro_slide-text text1'>
+                            <h1>An Opportunity to <br>Learn <br> Create <br>Innovate</h1>
+                        </div>
+                        <div class='intro_slide img1'><img src="images/slide1.svg" class="d-block w-100 " alt="..."></div>
+                    </div>
+
+                
+              </div>
+              <div class="carousel-item">
+                <div class="introduction slide2-box">
+                    <div class='intro_slide-text text2'><h1>Path towards<br> Innovation</h1></div>
+                    <div class='intro_slide img2'><img src="images/slide2.svg" class="d-block w-100 " alt="..."></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="introduction slide3-box">
+                    <div class='intro_slide-text text3'><h1>Exploring the<br> world of Robotics</h1></div>
+                    <div class='intro_slide img3'><img src="images/slide3.svg" class="d-block w-100 " alt="..."></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="introduction slide2-box">
+                    <div class='intro_slide-text text2'><h1>Fabricating Ideas to reality</h1></div>
+                    <div class='intro_slide img2'><img src="images/ideas.svg" class="d-block w-100 " alt="..."></div>
+                </div>
+              </div>
+            </div>
+            <div class='slide_nav'>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            </div>
+          </div>
+     </div>
+     <br>
+     <div class='chat_bot'>
+      <div><img src="images/chat_bot.png" alt="" id='chat' onclick=speak()></div>
+      <div><p id="listen-text">Listening.....</p></div>
+      </div>
+     <div class="mission_section">
+     
+     <div class="mission">
+        <img src="images/arrow.jpg" alt="" id="mission_img">
+        <div class="mission-text">
+            <p id="mission_heading">OUR MISSION</p>
+            <p id='mission_text'>"Empowering members with <br>an innovative and practical way of learning"</p>
+        </div>
+     </div>
+     </div>
+     <div class="mission_mobile">
+      <p id="mission_heading_mobile">OUR MISSION</p>
+      <img src="images/arrow.jpg" alt="" id="mission_img_mobile">
+      <p id='mission_text_mobile'>"Empowering members with <br>an innovative and practical way of learning"</p>
+   </div>
+     <div class='team'>
+      <h1 class='team-title' style="text-align: center;font-family: 'Russo One', sans-serif;">Team Phoenix</h1>
+       <img class='team-img' src="images/team.png" alt="">
+       
+       <p class='team-description'>Phoenix Robotics club is one of the technical club of RV Institute of Technology and Management.Here at Phoenix Robotics Club RVITM, we know that sometimes all it takes to change the world is a little support. Since our founding in 2019, we have always been determined to make an impact on our society. The core of our efforts is to bring our team’s modern ideas and passion into function for the range of activities we’re involved in. Through all of our endeavours, we hope to display the notion behind our beliefs.</p>
+     </div>
+
+     <div class="works">
+      <img src="images/workshop.jpeg" alt="" id='workshop_img'>
+      <div class='workshop_text'>
+        <h1 style="text-align: center;font-family: 'Russo One', sans-serif;">Workshops</h1>
+        <br>
+        <p>With this initiative, our goal is to provide enormous opportunities to understand robotics. With access to the correct resources, students can discover their abilities and enhance their knowledge about robotics in the workshops. They can also learn more about our work by getting in touch with our team whenever needed.</p>
+      </div>
+   </div>
+   <div class="works_mobile">
+    <h1 style="text-align: center;font-family: 'Russo One', sans-serif;">Workshops</h1>
+    <img src="images/workshop.jpeg" alt="" id='workshop_img_mobile'>
+    <div class='workshop_text_mobile'>
+    <br>
+    <p>With this initiative, our goal is to provide enormous opportunities to understand robotics. With access to the correct resources, students can discover their abilities and enhance their knowledge about robotics in the workshops. They can also learn more about our work by getting in touch with our team whenever needed.</p>
+    </div>
+ </div>
+   <div class="robot_design_pc works" style='background:white;'>
+    
+    <div class='workshop_text' style='color:black;'>
+    <h1 style="text-align: center;font-family: 'Russo One', sans-serif;">Robot Designing</h1>
+    <br>
+    <p>At phoenix robotics club, we are dedicated to amplify our efforts in designing robots as we strive to make a difference.
+      Hereby, inviting you to learn more and lend your support.</p>
+    </div>
+    <img src="images/gallery2.png" alt="" id='workshop_img'>
+ </div>
+ <div class='design' style='background:white;'>
+    
+  <div style='color:black;' id="robot_designing">
+  <h1 style="text-align: center;font-family: 'Russo One', sans-serif;" id="robot_design_heading">Robot Designing</h1>
+  <br>
+  <img src="images/gallery2.png" alt="" id='robot_design_image'>
+
+  <p id="robot_design_text">At phoenix robotics club, we are dedicated to amplify our efforts in designing robots as we strive to make a difference.
+    Hereby, inviting you to learn more and lend your support.</p>
+  </div>
+  
+</div>
+
+ </div>
+ 
+<div class="footer">
+  
+  <div class='address'>
+    <h1 class="Contact_heading">Any queries?</h1>
+    <div class="contact_info">
+    <img src="images/contact.svg" alt="">
+    <div class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="client_name">Name</label>
+            <input type="text" class="form-control" id="client_name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="client_email">Email</label>
+            <input type="email" class="form-control" id="client_email" placeholder="name@email.com" required>
+            <small>We'll never share your email with anyone else</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="client_message">Message</label>
+          <textarea class="form-control" id="client_message" placeholder="Write your query here....."rows="4" required></textarea>
+        </div>
+        <div class="recaptcha">
+        <form action="?" method="POST">
+          <div class="g-recaptcha" data-sitekey="6LeeOhAaAAAAAGHCx9nh0P3k0R65eo5qP5Xmqtlu"></div>
+          <br/>
+        </form>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="mail()">Submit</button>
+      <p id="query"><i class="fas fa-check-circle"></i>&nbsp;We have received your query. We will contact you through mail</p>
+    </div>
+    </div>
+    <div class='social-media'>
+      <a href="https://www.instagram.com/phoenix_robotics/"><i class="fab fa-instagram fa-2x"></i></a>
+      <a href="https://twitter.com/PhoenixRC_RVIT"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCo3qivGrh3uXITdJRI54rwQ"><i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://www.facebook.com/phoneixrcrvitm/"><i class="fab fa-facebook fa-2x"></i></a>
+    </div>
+    <p>Copyright © 2020 by Phoenix Robotics Club RVITM, All rights reserved</p>
+  </div>
+</div>
+<script src='index.js'></script>
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
+<script src="contact.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+    #menu{
+        display: none;
+    }
+    .hamburger_menu{
+      display: none;
+    }
+    .contact_info{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contact_info img{
+      width:100%;
+    }
+    .Contact_heading{
+      font-family: 'Nova Flat', cursive !important;
+      text-align: center;
+    }
+    @media screen and (max-width:870px){
+        .nav-links,#logo-text{
+            display: none;
+        }
+        #menu{
+          display: initial;
+        }
+        .header{
+          display: flex;
+          justify-content: space-between;
+          background:transparent !important;
+          box-shadow: none !important;
+        }
+        #menu{
+          width: 40px;
+          height: 40px;
+          align-items: center;
+          text-align: center;
+          padding: 0;
+          background:white;
+          border: none;
+          border-radius:6px;
+          z-index: 10;
+        }
+        #menu img{
+          width: 100%;
+          height: 100%;
+        }
+        .hamburger_menu{
+          display:none;
+          flex-direction: column;
+          text-decoration: none;
+          list-style:none;
+          justify-content: space-around;
+          align-items: center;
+          font-size:45px;
+          background:rgb(0,0,0,0.7);
+          height: 100%;
+          width:100%;
+          position: fixed;
+          z-index:10;
+        }
+        .hamburger_menu a{
+          color: white;
+          font-family: 'Nova Flat', cursive; 
+
+        }
+        .hamburger_menu a:focus{
+          text-decoration:none;
+        }
+        button:focus {
+          outline: none;
+        }
+        #hamburger_home{
+          border-bottom:4px solid grey;
+        }
+        .introduction{
+          display:initial;
+        }
+        .slidebar{
+          width: 100%;
+          height: 100vh !important;
+        }
+        .intro_slide{
+          height: 80vh;
+          width: 100%;
+          
+        }
+        .introduction{
+          display:flex;
+          flex-direction:column;
+          background:rgb(219, 219, 219,0.8);
+        }
+        .intro_slide-text {
+          order: 2;
+        }
+        .intro_slide {order: 1;}
+        .intro_slide-text br{
+          display: none;
+        }
+        .chat_bot{
+          display: none;
+        }
+        .carousel-indicators{
+          display: none;
+        }
+        .contact_info{
+          display: flex;
+          flex-direction: column;
+          
+        }
+    }
+</style>
+<script>
+      var a = document.getElementsByClassName('hamburger_menu')[0];
+      function hamburger() {
+        if (a.style.display === 'flex'){
+          a.style.display = 'none';
+          document.getElementById('menu').innerHTML='<img src="images/menu.png" alt="">';
+        }
+        else{
+          a.style.display = 'flex';
+          document.getElementById('menu').innerHTML='<h2>X</h2>';
+    
+        }
+      }
+</script>
+</body>
+</html>

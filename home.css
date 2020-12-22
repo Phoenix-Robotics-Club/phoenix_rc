@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+body{
+    background-color: black;
+}
+.logo_text{
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+}
+.logo_text:hover{
+    text-decoration:none;
+    color:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:none;
+    height: 12vh;
+}
+.nav-links{
+    list-style: none;
+    margin-top: 18px;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-links a:hover{
+    color: #71e0eb;
+}
+#home{
+    border-bottom: 2px solid rgb(105, 104, 104);
+}
+.header button{
+    padding: 5px 20px;
+    background-color:#49818c ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+.header button:hover{
+
+    color: white;
+    border: black 1px solid;
+}
+.logo{
+    display: inline;
+    justify-content: space-between;
+    align-items: center;    
+}
+.intro_slide-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.intro_slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro_slide img{
+    width:100%;
+    height: 90%;
+}
+.introduction{
+    
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 50% 50%;
+} 
+.pic1,.pic2,.pic3{
+    width:100%;
+}
+
+.mission{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin:20px 20px;
+    overflow: hidden;
+    
+    
+}
+.mission{
+    margin:auto;
+    align-items:center;
+}
+#mission_img{
+    width:100%;
+    height: auto;
+
+}
+#mission_heading{
+    font-family: 'Russo One', sans-serif;
+    color:#a1a1a1;
+    font-size: 50px;
+    text-align: center;
+}
+#mission_text{
+    text-align: center;
+    font-size:24px;
+    font-weight: 500;
+    
+}
+#bgcurve{
+    position: absolute;
+    z-index: -20;
+}
+.drop-btn{
+    color: black;
+}
+.drop-menu{
+    display:none;
+}
+.drop-btn:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.drop-menu:hover a{
+    display:block;
+}
+
+.intro_slide{
+    width:100%;
+    height: 100%;
+}
+
+.team{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.chat_bot{
+    width:80px;
+    height: 80px;
+    z-index: 100;
+    float: right;
+    cursor: pointer;
+}
+.team-img{
+    width:100%;
+    margin:auto;
+    
+}
+.team_info{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+}
+.team-title{
+    text-align: center;
+
+}
+.team-description{
+    text-align: center;
+}
+.team_info_mobile{
+    display: none;
+}
+.works{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:20px 0px;
+    height:400px;
+    background:black;
+    
+}
+#workshop_img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+#robot_designing_image{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.workshop_text{
+    margin: auto;
+    padding:20px 20px;
+    animation: ease-in 2s right ;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color:white;
+}
+.carousel-inner{
+    margin: auto;
+}
+#chat{
+    width:5%;
+    height:10%;
+    position:fixed;
+    right:45px;
+    bottom:35px;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    border-radius: 200px;
+}
+.chat_bot{
+    position:fixed;
+    right:30px;
+    bottom:15px;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    z-index: 100;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+}
+#listen-text{
+    display:none;
+    z-index: 100;
+    
+}
+.chat_bot p{
+    transform:translateY(20px);
+    padding-left:10px;
+    background:linear-gradient(to right ,violet,blueviolet);
+    border-radius:15px;
+}
+.footer{
+    padding-top:30px;
+    margin: auto;
+    background:black;
+}
+.address{
+    color: white;
+    text-align: center;
+    padding:20px 2px;
+}
+.address li{
+    list-style: none;
+}
+.social-media i{
+    padding-top: 30px;
+    width:100px;
+    height: 100px;
+}
+.contact-form{
+    margin:30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+#query{
+    margin:15px;
+    visibility: hidden;
+}
+.recaptcha{
+    display: flex;
+    justify-content:center;
+}
+.robot_design_mobile,.robot_design_mobile #workshop_img{
+    display:none;
+}
+#robot_designing{
+    display: none;
+}
+.mission_mobile{
+    display: none;
+}
+.works_mobile{
+    display: none;
+}
+#menu{
+    display: none;
+}
+.hamburger_menu{
+  display: none;
+}
+.contact_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact_info img{
+  width:100%;
+}
+.Contact_heading{
+  font-family: 'Nova Flat', cursive !important;
+  text-align: center;
+}
+.query_form button{
+    width:100%;
+}
+.chat_bot{
+    display:none;
+}
+@media screen and (max-width:870px){
+    body{
+        margin:0;
+    }
+    .team-title{order:1;}
+    .team-img{order:2;}
+    .team-description{order:3;}
+    .robot_design_pc{
+        display:none;
+    }   
+    #robot_designing{
+        display:flex;
+        flex-direction:column;
+        width: 100%;
+        
+    }
+    
+    #robot_design_heading{
+        font-size: 30px;
+        text-shadow: 2px 1px gray;
+        padding-top: 20px;
+        margin-bottom:0;
+        
+    }
+    #robot_design_text{
+        padding:20px;
+        margin:0;
+    }
+    .works{
+        display:none;
+    }
+    .works_mobile{
+        display:flex;
+        flex-direction:column;
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        padding-top: 25px;
+    }
+    #workshop_img_mobile{
+        width:100%;
+    }
+    .works_mobile h1{
+        text-shadow: 2px 2px gray;
+        font-size: 30px;
+        color: white;
+        padding-bottom:20px;
+    }
+    .works_mobile p {
+        padding:20px;
+    }
+    .team{
+        display:flex;
+        flex-direction:column;
+    }
+    .team-img_mobile{
+        width:100%;
+        border:none;
+        border-radius:0;
+    }
+    .team-title_mobile{
+        font-size:30px;
+        padding-bottom:20px;
+        text-shadow:1px 2px gray;
+    }
+    .team_info,.team-img{
+        display:none;
+    }
+    .team_info_mobile{
+        display:flex;
+        text-align:center;
+        flex-direction:column;
+    }
+    .social-media{
+        display: flex;
+        justify-content:space-around;
+    }
+    .mission{
+        display:none;
+    }
+    .mission_mobile{
+        display:flex;
+        flex-direction:column;
+    }
+    #mission_heading_mobile{
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        text-shadow: 0.5px 2px grey;
+        font-family: 'Russo One', sans-serif;
+    }
+    #mission_img_mobile{
+        width:100%;
+    }
+    #mission_text_mobile{
+        text-align: center;
+        font-size:18px;
+        
+    }
+    .nav-links,#logo-text{
+        display: none;
+    }
+    #menu{
+      display: initial;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      background:transparent !important;
+      box-shadow: none !important;
+    }
+    #menu{
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      background:white;
+      border: none;
+      border-radius:6px;
+      z-index: 10;
+    }
+    #menu img{
+      width: 100%;
+      height: 100%;
+    }
+    .hamburger_menu{
+      display:none;
+      flex-direction: column;
+      text-decoration: none;
+      list-style:none;
+      justify-content: space-around;
+      align-items: center;
+      font-size:45px;
+      background:rgb(0,0,0,0.7);
+      height: 100%;
+      width:100%;
+      position: fixed;
+      z-index:10;
+    }
+    .hamburger_menu a{
+      color: white;
+      font-family: 'Nova Flat', cursive; 
+
+    }
+    .hamburger_menu a:focus{
+      text-decoration:none;
+    }
+    .hamburger_menu a:hover{
+        text-decoration:none;
+    }
+    button:focus {
+      outline: none !important;
+    }
+    #hamburger_home{
+      border-bottom:4px solid grey;
+    }
+    .introduction{
+      display:initial;
+    }
+    .slidebar{
+      width: 100%;
+      height: 100vh !important;
+    }
+    .intro_slide{
+      height: 80vh;
+      width: 100%;
+      
+    }
+    .introduction{
+      display:flex;
+      flex-direction:column;
+      background:rgb(219, 219, 219,0.8);
+    }
+    .intro_slide-text {
+      order: 2;
+    }
+    .intro_slide {order: 1;}
+    .intro_slide-text br{
+      display: none;
+    }
+    .chat_bot{
+      display: none;
+    }
+    .carousel-indicators{
+      display: none !important;
+    }
+    .contact_info{
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .Contact_heading{
+        font-size:50px;
+    }
+    .social-media i{
+        padding:0;
+        width:100%;
+    }
+}

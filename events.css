@@ -1,0 +1,12 @@
+#ongoing_heading{
+    text-align: center;
+}
+.ongoing_one{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding: 20px;
+    background-color: black;
+}
+#ongoing_one_img{
+    width:100%;
+}
